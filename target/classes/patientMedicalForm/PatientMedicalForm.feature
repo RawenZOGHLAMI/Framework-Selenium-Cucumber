@@ -1,6 +1,6 @@
 @patientMedicalForm
 Feature: send form -Medical
-  I want to send the patient form
+  I want to fill in the patient form
 
   @form
   Scenario: send form -Medical
