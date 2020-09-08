@@ -20,6 +20,10 @@ public class AuthentificationPage {
 	final static String BUTTON_LOGIN_ID = "btnLogin";
 	final static String WELCOME_ID = "welcome";
 	
+	final static String ADMIN_ID = "//b[contains(text(),'Admin')]";
+	final static String BUZZ_ID = "//b[contains(text(),'Buzz')]";  
+	
+	
 
 	/* @FindBy */
 
@@ -31,6 +35,11 @@ public class AuthentificationPage {
 	public static WebElement BtnLogin;
 	@FindBy(how = How.ID, using = WELCOME_ID)
 	public static WebElement welcome;
+	
+	@FindBy(how = How.XPATH, using = ADMIN_ID)
+	public static WebElement LinkAdmin;
+	@FindBy(how = How.XPATH, using = BUZZ_ID)
+	public static WebElement LinkBuzz;
 	
 	/* Methods */
 
@@ -45,5 +54,12 @@ public class AuthentificationPage {
 	public void clickLoginButton() {
 		BtnLogin.click();
 	}
+	
+	public void clickLinkAdmin() {
+		LinkAdmin.click();
+		}
+		public void clickLinkBuzz() {
+		LinkBuzz.click();
+		}
 
 }

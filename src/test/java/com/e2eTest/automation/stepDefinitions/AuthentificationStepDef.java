@@ -23,6 +23,7 @@ public class AuthentificationStepDef {
 	public void openApplication() throws Throwable {
 		String url = "https://opensource-demo.orangehrmlive.com/";
 		driver.get(url);
+		
 	}
 
 	@When("^set username$")
@@ -36,15 +37,27 @@ public class AuthentificationStepDef {
 		authentificationPage.sendPassword();
 	}
 
-	@When("^click login button$")
+	@When("^click Login button$")
 	public void clickLoginButton() throws Throwable {
 		authentificationPage.clickLoginButton();
 	}
 
-	@Then("^show page admin$")
+	@Then("^show page Admin$")
 	public void showPageAdmin() throws Throwable {
 		String wlc = AuthentificationPage.welcome.getText();
 		Assert.assertTrue(wlc.contains("Welcome"));
+	}
+	
+	@When("^click on Admin$")
+	public void clickOnAdmin() throws Throwable {
+
+	authentificationPage.clickLinkAdmin();
+	}
+
+	@When("^click on Buzz$")
+	public void clickOnBuzz() throws Throwable {
+
+	authentificationPage.clickLinkBuzz();
 	}
 
 }

@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 		// glue = {""}, path dev des cas de test
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 		snippets = SnippetType.CAMELCASE,
-		tags = {("@form")},
+		tags = {("@authentification")},
 		monochrome = true 
 		)
 

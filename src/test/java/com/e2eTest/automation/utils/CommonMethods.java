@@ -1,5 +1,9 @@
 package com.e2eTest.automation.utils;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
@@ -7,14 +11,17 @@ import org.slf4j.LoggerFactory;
 
 public class CommonMethods {
 
+
 	public static WebDriver driver;
-	
-		public CommonMethods() {
-			driver=Setup.driver;
-		}
+	public static Properties prop;
+
+	public CommonMethods() {
+		driver=Setup.driver;
+
+	}
 
 	protected static final Logger logger = LoggerFactory.getLogger(AbstractPage.class);
-	
+
 	public static void scrollerBottom() {
 
 		for (int second = 0;; second++) {
@@ -43,6 +50,12 @@ public class CommonMethods {
 
 	public void forward() {
 		driver.navigate().forward();
+	}
+
+	public void readFile() throws IOException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream("src/test/ressources/configs/config.properties");
+		prop.load(fis);
 	}
 
 }
