@@ -1,4 +1,4 @@
-package com.e2eTest.automation.pageObject;
+package com.e2eTest.automation.authentification;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +27,7 @@ public class AuthentificationPage {
 
 	/* @FindBy */
 
-	@FindBy(how = How.ID, using = USER_NAME_ID)
+	@FindBy(how = How.ID, using = USER_NAME_ID) 
 	public static WebElement userName;
 	@FindBy(how = How.ID, using = PASSWORD_ID)
 	public static WebElement password;

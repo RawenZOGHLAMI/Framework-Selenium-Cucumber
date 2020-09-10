@@ -1,10 +1,9 @@
-package com.e2eTest.automation.stepDefinitions;
+package com.e2eTest.automation.authentification;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.e2eTest.automation.pageObject.AuthentificationPage;
 import com.e2eTest.automation.utils.Setup;
 
 import cucumber.api.java.en.Given;
@@ -36,6 +35,8 @@ public class AuthentificationStepDef {
 	public void setPassword() throws Throwable {
 		authentificationPage.sendPassword();
 	}
+
+
 
 	@When("^click Login button$")
 	public void clickLoginButton() throws Throwable {

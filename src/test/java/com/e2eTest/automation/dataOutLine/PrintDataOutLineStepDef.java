@@ -1,10 +1,8 @@
-package com.e2eTest.automation.stepDefinitions;
+package com.e2eTest.automation.dataOutLine;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-
-import com.e2eTest.automation.pageObject.PrintDataOutLinePage;
 import com.e2eTest.automation.utils.Setup;
 
 import cucumber.api.java.en.Given;
