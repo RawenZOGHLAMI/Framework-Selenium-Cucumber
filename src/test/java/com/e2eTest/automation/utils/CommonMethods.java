@@ -57,5 +57,13 @@ public class CommonMethods {
 		FileInputStream fis = new FileInputStream("src/test/ressources/configs/config.properties");
 		prop.load(fis);
 	}
+	
+	public void openBrowserWithConfigFile(String url) throws IOException {
+
+		prop= new Properties();
+		FileInputStream fis= new FileInputStream("src/test/ressources/configs/config.properties");
+		prop.load(fis);
+		driver.get(prop.getProperty(url));
+		}
 
 }

@@ -1,9 +1,10 @@
-package com.e2eTest.automation.patientForm;
+package com.e2eTest.automation.patientForm.stepDefinitions;
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import com.e2eTest.automation.patientForm.pageObjects.SendPatientFormPage;
 import com.e2eTest.automation.utils.CommonMethods;
 import com.e2eTest.automation.utils.Setup;
 

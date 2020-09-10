@@ -1,4 +1,4 @@
-package com.e2eTest.automation.dataOutLine;
+package com.e2eTest.automation.dataOutLine.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

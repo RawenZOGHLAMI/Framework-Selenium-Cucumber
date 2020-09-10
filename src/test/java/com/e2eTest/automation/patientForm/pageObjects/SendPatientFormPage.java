@@ -1,4 +1,4 @@
-package com.e2eTest.automation.patientForm;
+package com.e2eTest.automation.patientForm.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
