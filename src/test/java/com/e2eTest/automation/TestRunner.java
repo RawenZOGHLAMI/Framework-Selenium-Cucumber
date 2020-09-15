@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 		// glue = {""}, path dev des cas de test
 		plugin = { "pretty", "html:target/cucumber-html-report","json:target/cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/OrangeReport.html" }, 
 		snippets = SnippetType.CAMELCASE, 
-		tags = {("@authentification") }, monochrome = true)
+		tags = {("@buttonClick") }, monochrome = true)
 
 public class TestRunner {
 
