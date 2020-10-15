@@ -40,7 +40,7 @@ public class Setup {
 			}
 		}
 
-		driver.quit();
+		//driver.quit();
 	}
 
 }
